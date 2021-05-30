@@ -1,0 +1,435 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="LTR" lang="es"  xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<meta name="theme-color" content="#424143">
+<meta http-equiv="Expires" content="0">
+<meta charset="UTF-8">
+<meta http-equiv="Last-Modified" content="0">
+
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+
+<meta http-equiv="Pragma" content="no-cache">
+  <meta name="google-site-verification" content="yxb4mI-w2ZRXKWd1NpeCaGSu4YQ8c8OPUBhz2eU4st0" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/galeria.css">
+<link rel="stylesheet" type="text/css" href="css/galeria1.css" />
+<link rel="stylesheet" type="text/css" href="css/galeria2.css" />
+<link rel="stylesheet" type="text/css" href="css/galeria3.css" />
+<link rel="stylesheet" type="text/css" href="css/galeria4.css" />
+
+</head>
+<body  >
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 50px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="margin-left: 20px;">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="ul1">
+            <li class="nav-item">
+              <a class="nav-link" href="quienes somos.html">Quienes Somos?</a>
+              <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CONTACTO.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donde encontrarnos.html">Donde encontrarnos</a>
+            </li>
+            <li class="nav-item" id="login">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div>
+        <div id="product-detail" class="contenedorDetalleProd" >
+            
+
+            <form name="cart_quantity" action="" method="post" id="cart_quantity">                <input type="hidden" name="products_id" value="13219">
+                
+                <div class="row hidden-xs">
+                    <div class="col-md-16 title-product">
+                        <h1 class="tituloProducto hidden-xs "  id="titulo">
+                            MICROPROCESADOR AMD RYZEN 9 5950X 16/32 4.9GHZ S/G S/C ZEN3
+
+                        </h1>
+
+                        <div class="prod-favorites-cont">
+                            <div class="sub-cont">
+                                <div class="favorite-cont add" onclick="favoriteManager($(this));" data-prod-id="13219" data-grouper-id="" data-action="add">
+                                   
+                                    <!-- <div class="text">Marcar como favorito</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-title-product hidden-xs">
+                    
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-16 col-xs-24 col-image">
+                        <div class="contImgDetalle">
+                            
+<div class="prod-images-container">
+    
+    <div class="img-detalle-cont main-img" style="overflow: hidden">
+        <img class="img-responsive img-free-shipping hidden hidden-xs" src="imagenes/productos/ico_envio_gratis.png" alt="" style="z-index: 5;">
+        <!-- carousel -->
+        <div class="prod-images-container">
+            <a id="prev-mainImg" class="owl-prev-mainImg"><img src="imagenes/productos/owl-left.png"></a>
+            <a id="next-mainImg" class="owl-next-mainImg"><img src="imagenes/productos/owl-right.png"></a>
+            <div class="prodImg-carousel owl-carousel">
+                                    <div class="img-container" data-gallery="#blueimp-gallery" >
+                        <img src="imagenes/productos/1618247364_1609790688_microprocesadoramdryzen95900x.jpg" alt="Microprocesador Intel Core i3 10100F 4.3Ghz S1200">
+                        
+                    </div>
+
+                            </div>
+
+            <div class="display-cant-imgs visible-xs">1 Fotos</div>
+        </div>
+
+ 
+
+    </div>
+</div>
+       
+
+<script type="text/javascript">
+    
+    
+    var currentSlide = 0;//indicar cual es el translate actual
+    var slideSize = 86.85; // indica cuanto debe modificar el translate
+    var cantItems = 0; // indica la cantidad de items encontrados en el carousel
+    var maxItems = 7; // indica la cantidad maxima de items que se ven
+    var lastItem = slideSize * -1; // indica el maximo translate, para que no siga haciendo slide hacia arriba
+    $(document).ready(function(){
+      
+      cantItems = $('#slide-prod-img').find('.item').length;// obtenemos la cantidad maxima de items
+      lastItem = slideSize * (maxItems - cantItems); //calculamos el maximo translate negativo (hacia top)
+      
+      if(cantItems > maxItems){
+        $('#slide-prod-img').find('.navigation-vslide').show();
+      }
+
+    });
+
+    /*Hacemos slide hacia bottom*/
+    function prevImgSlide(){
+      var element = $('#slide-prod-img').find('.transition-si-y');
+        /*controlamos que no se pase el translate3d, que el primer item, sea el ultimo translate, y deje de hacer slide hacia abajo*/
+        if(!(currentSlide == 0)){
+            currentSlide += slideSize;
+            $(element).css({
+               'transform': 'translate3d(0px, '+currentSlide+'px, 0px)',
+            });
+            console.log('prev');
+        }
+    }
+
+    /*Hacemos slide hacia top*/
+    function nextImgSlide(){
+      var element = $('#slide-prod-img').find('.transition-si-y');
+      /*controlamos que no se pase el translate3d, que el ultimo item, sea el ultimo translate, y deje de hacer slide hacia arriba*/
+      if(!(currentSlide == (lastItem))){
+        currentSlide -= slideSize;
+        $(element).css({
+            'transform': 'translate3d(0px, '+currentSlide+'px, 0px)',
+        });
+      }
+    }
+
+</script>                        </div><!-- /.contImgDetalle -->
+
+                                            </div>
+
+
+                    <!-- TITULO, PRECIO Y ENVIO -->
+                    <div class="col-md-8 col-xs-24 col-desc">
+                        <div class="contDescDetalle">
+                            <h1 class="tituloProducto visible-xs ">
+                                MICROPROCESADOR AMD RYZEN 9 5950X 16/32 4.9GHZ S/G S/C ZEN3
+
+                           </h1>
+                            <div class="sub-title-product visible-xs">
+                                
+                            </div>
+                            
+                            <div class="contPrecio">
+                                <div class="padding-row">
+                                    <!-- PRECIO -->
+<div class="padding-col price-col clearfix">
+        <div class="precioEspecial">
+        <div class="row precioEspecialEft " >
+            <div class="col-sm-10 col-xs-12">
+                <div class="price-content-product">
+                    <div class="textPrecio text-green">
+                        $108990                    </div>
+                </div><!--/fin .price-content-product-->
+                <div class="cont-offer-price">
+                                    </div>
+            </div>
+            <div class="col-sm-14 col-xs-11">
+                <div class="titlePriceProduct"> <img src="imagenes/productos/iconoPrecio.png" class="iconPrice"> Precio <div class="special">especial</div></div>
+                <div class="subtitlePriceProduct hidden-xs">
+                    Valido para 1 pago en efectivo, debito o transferencia bancaria.
+                </div>
+            </div>
+            <div class="visible-xs col-xs-1" style="float:right">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </div>
+        <hr style="border-color: #cdcdcd" class="precioEspecialEft-separator ">
+        <div class="payWithMP " >
+            Paga con Mercado Pago
+            <div class="row">
+                <div class="col-sm-12 col-xs-23">
+                    <img src="imagenes/productos/logoMP.png" class="paylogoMp" alt="Mercado Pago">
+                </div>
+                <div class="col-xs-1 visible-xs" style="float:right">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                                <div class="col-sm-12 col-xs-24">
+                    <a href="" tabindex="-1" rel="modalOpenPage" data-toggle="modal" data-target="#paymentMethodsMP" class="btn bntCalculateFeesMP">CALCULAR CUOTAS</a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+<div class="padding-col price-col clearfix " style="margin-bottom: 50px;">
+    <div class="precioLista" >
+                <div class="payWithMPGtw" >
+            <div class="row">
+                <div class="col-sm-12 col-xs-24">
+                    <div class="titlePriceList">
+                        <img src="imagenes/productos/tildeFD.png" alt="tilde"> Precio de lista:
+                    </div>
+                    <div class="priceList">
+                        $132488                    </div>
+                </div>
+                <div class="col-sm-12 col-xs-23">
+                    <div class="leyendInstallment visible-xs">
+                        <strong>12 cuotas sin interes de <span class="insRateCalc">$11040.67</span></strong>
+                    </div>
+                    <img src="imagenes/productos/ahora12_ch.png" style="margin-top: -18px;">
+                </div>
+                <div class="col-xs-1 visible-xs" style="float:right">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="leyendInstallment hidden-xs">
+                <strong>12 cuotas sin interes de <span class="insRateCalc">$1187.42</span></strong>
+                <p>Sobre precio de lista</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+    
+                            
+                            <div class="padding-row container-buy-btn">
+                                <div class="col-input ">
+                                    <div class="input-group-qty">
+                                
+                                        <input type="text" name="cart_quantity" value="1" class="form-control input-cart-qty" id="quantityProduct_13219" />                                        <div class="qty-btns">
+                                            <span>
+                                                <button class="btn btn-secondary" onclick="mas('13219', true);return false;" type="button">
+                                                    
+                                                </button>
+                                            </span>
+                                            <span>
+                                                <button class="btn btn-secondary" onclick="menos('13219', true);return false;" type="button">
+                                                    
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-btn">
+                                    
+                                    <div class="btn-container ">
+                                                                                    <button type="button" class="btn-buy btn-block">Comprar</button>
+                                                                            </div>
+                                   
+                                </div>
+
+                                
+                                <div class="paymentInfoMP" style="float: right;"></div>
+                                
+                            </div>
+
+                            
+                               
+                                
+                        </div> 
+                    </div>
+                   
+
+                </div> 
+
+              
+              
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="separator hidden-xs" style="margin: 35px 0 45px;">
+
+                <div class="descripDetalle" >
+                    <h2 class="desc-title">Descripcion</h2>
+                    <div  id="wc-power-page">
+                        <span style="color:#696969"><span style="font-size:14px"><strong>Especificaciones</strong><br />
+# de n&uacute;cleos de CPU 16<br />
+# de hilos 32<br />
+Reloj base 3.4GHz<br />
+Reloj de aumento m&aacute;x.&nbsp; Hasta 4.9GHz<br />
+Cach&eacute; L2 total 8MB<br />
+Cach&eacute; L3 total 64MB<br />
+Desbloqueados&nbsp; S&iacute;<br />
+CMOS TSMC 7nm FinFET<br />
+Package AM4<br />
+Versi&oacute;n de PCI Express PCIe 4.0<br />
+Soluci&oacute;n t&eacute;rmica (PIB) Not included<br />
+TDP/TDP predeterminado 105W<br />
+Temp. m&aacute;x. 90&deg;C<br />
+<br />
+<strong>Memoria</strong><br />
+Velocidad m&aacute;xima de memoria Up to 3200MHz<br />
+Tipo de memoria DDR4<br />
+<br />
+<strong>Funcionalidades principales</strong><br />
+Tecnolog&iacute;as compatibles<br />
+AMD &quot;Zen 3&quot; Core Architecture<br />
+Tecnolog&iacute;a AMD StoreMI<br />
+Utilidad AMD Ryzen&trade; Master<br />
+AMD Ryzen&trade; VR-Ready Premium</span></span>                    </div>
+
+                    </div>
+
+
+                
+                </div>
+
+                                           
+
+                    
+                  </div></div>
+        </div>
+      </div>                        </div>
+                    </div> 
+                
+                           </form>
+        </div>
+        <footer>
+        <div class="footer-info" id="footer" style="margin-top: 100px;">
+            <div class="container ">
+                <div class="row">
+                    <div class="contact-info col-sm-8">
+                        <!--buttons contacts-->
+                        <div class="contact-btn-container visible-xs">
+                            <a class="btn btn-contact btn-write" href="">ESCRIBINOS</a>
+                                                    <a class="btn btn-contact btn-call" href="tel:08105555434">LLAMAR</a>
+                        </div>
+        
+                        <div class="phone clearfix">
+                            <label class="textImgFooter">
+                                <div class="title" style="color: #91c612;"> ATENCION AL CLIENTE: </div>
+                                <div style="font-size: 14px;"> 0810-555-5434 </div>
+                                <div>
+                                    <a href="lorem@lorem" style="font-size: 14px;">
+                                      lorem@lorem                             </a>
+                                </div>
+                            </label></br>
+                            <label style="font-size: 14px; padding-top: 10px">Lun. a Vie. de 9 a 19h. Sab de 10 a 14h.</label>
+                        </div>
+        
+                          <div class="address row">
+                            
+                            <div class="col-sm-22 col-xs-21">
+                              <label class="textImgFooter">
+                                  
+                                  <div>  </div>
+                                  <div style="font-size: 14px;"> Lun. a Vie. de 10 a 17h. </div>
+                              </label>
+                            </div>
+                            <!-- </a> -->
+                          </div>
+                    </div><!-- /.col.contact-info -->
+        
+                    <div class="footer-links__term footer-links__term-imgs col-sm-8">
+                        <div class="newsletter-title">
+                            <div class="title-text">
+                                SE EL PRIMERO EN ENTERARTE                        </div>
+                            <div>
+                                Suscribite y recibi las mejores promos!                        </div>
+                        </div>
+                        <div id="contenedorNewsletterResponsive">
+                          <form class="footer-subcribe" id="formNewsResponsive" action="_newsletterModal.php" method="post">
+                            <div class="form-group has-feedback">
+                              <div class="footer-subcribe_field" style="position: relative;">
+                                <div class="input-group">
+                                  <input type="text" class="required email form-control " placeholder="direccion de email..." name="Email">
+                                  <span class="input-group-btn">
+                                    <button id="tdb1" class="btn pull-right" type="submit" onclick="">
+                                        <img src="imagenes/send.png" style="max-height: 16px;">
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <input type="hidden" name="accion" value="send"/>
+                          </form>
+                          <div>
+                              <div id="newsLoading" style="display: none;"></div>
+                              <div id="subscribeError" style="display: none; text-align: center; width: 100%;" class="alert alert-danger subscribeError"></div>
+                          </div>
+                          
+                        </div>
+                        
+                        <div class="social-links-container">
+                            <div class="icon-cont">
+                                <a target="blank" href="https://www.facebook.com">
+                                  <img src="imagenes/fb.png" >
+                                    
+                                </a>
+                            </div>
+                            <div class="icon-cont">
+                                <a target="blank" href="https://www.instagram.com">
+                                  <img src="imagenes/ig.png" >
+                                    
+                                </a>
+                            </div>
+        
+                            <div class="icon-cont">
+                                <a target="blank" href="https://www.youtube.com">
+                                  <img src="imagenes/yt.png" >
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+       
+</body>
+</html>
